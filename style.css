@@ -19,7 +19,7 @@ h1 {
 h2 { /* large titles without custom text */
     font-family: Arial, Helvetica, sans-serif;
     color: azure;
-    font-size: medium;
+    font-size: xx-large;
 }
 h3 { /* various all caps text bits*/
     font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +28,8 @@ h3 { /* various all caps text bits*/
 h4 { /* using this as normal text, to be used as last h being used */
     font-family: Arial, Helvetica, sans-serif;
     color: azure;
-    font-size: small;
+    font-size: large;
+    line-height: 1.5;
 }
 p {
 
@@ -99,6 +100,20 @@ p {
     height: auto;
 }
 
+/* team logo */
+
+.team {
+    width: 80vw;
+    height: auto;
+    margin: 5vw auto;
+}
+
+.team-image {
+    width: 100%;
+    height: auto;
+}
+
+
 
 /* split section */
 
@@ -107,9 +122,9 @@ p {
     align-items: center;
     justify-content: center;
     gap: 4vw; /* Space between image and text */
-    max-width: 800px; /* Keeps it from getting too wide on big screens */
+    max-width: 90vw; /* Keeps it from getting too wide on big screens */
     margin: 60px auto; /* Centers the whole block and adds space above/below */
-    padding: 0 20px;
+    padding: 0 2vw;
     text-align: left; /* Overrides the body's center alignment for this section */
 }
 
@@ -123,20 +138,18 @@ p {
     cursor: pointer;
     box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
     display: wrap;
-    align-items: left;    /* Vertically centers arrows and text */
     justify-content: left;
-    width: 60vw;
+    width: 70vw;
 }
 
 .right-section {
-    max-width: 40vw;
+    width: 30vw;
 }
 
 .store-tab {
     background-color: #00000088;
     padding: 1vw 2vw; /* More padding for a larger card */
     border-radius: 0.4vw; /* Slightly rounded corners */
-    text-align: left;
     line-height: 1;
     transition: transform 0.2s ease, background-color 0.2s ease;
     cursor: pointer;
@@ -144,8 +157,39 @@ p {
     display: wrap;
     align-items: left;    /* Vertically centers arrows and text */
     justify-content: left;
-    width: 40vw;
+    text-align: center;
+    margin-bottom: 2vw;
 }
+
+.team-tab {
+    background-color: #00000088;
+    padding: 1vw 2vw; /* More padding for a larger card */
+    border-radius: 0.4vw; /* Slightly rounded corners */
+    line-height: 1;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
+    display: wrap;
+    align-items: left;    /* Vertically centers arrows and text */
+    justify-content: left;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.events-tab {
+    background-color: #00000088;
+    padding: 1vw 2vw; /* More padding for a larger card */
+    border-radius: 0.4vw; /* Slightly rounded corners */
+    line-height: 1;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
+    display: wrap;
+    align-items: left;    /* Vertically centers arrows and text */
+    justify-content: left;
+    text-align: center;
+}
+
 
 
 
@@ -155,12 +199,10 @@ p {
 /* KEEP AT THE END! */
 .credit {
     gap: 20px;
-    position: fixed;
+    position: relative;
     bottom: 10px;       /* Distance from the bottom of the page */
-    left: 50%;          /* Moves the left edge to the middle of the screen */
-    transform: translateX(-50%); /* Shifts it back by half its width to center it perfectly */
+    margin-left: 40vw;
     text-align: center;
-    white-space: nowrap; /* Prevents the text from wrapping to a new line */
     opacity: 80%;
 }
 .credit-nav-icon {
