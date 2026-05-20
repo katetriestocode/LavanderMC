@@ -105,7 +105,7 @@ p {
 /* main logo */
 
 .logo {
-    width: 75vw;
+    width: 70vw;
     height: auto;
     margin: 6vw auto;
 }
@@ -216,10 +216,28 @@ p {
     flex-direction: column;  /* Stacks items vertically */
     align-items: flex-start; /* Aligns everything to the left */
     text-align: left;        /* Ensures text starts from the left edge */
+    margin-bottom: 1vw;
+}
+
+.widget {
+    opacity: 90%
 }
 
 
+.postcard {
+    max-width: 80%;
+    margin: 2vw auto;
+    display: block;
+    opacity: 90%;
+    margin-top: 5vw;
+}
 
+.postcard img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.3);
+    transform: rotate(-8deg);
+}
 
 
 /* KEEP AT THE END! */
