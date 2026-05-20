@@ -105,9 +105,9 @@ p {
 /* main logo */
 
 .logo {
-    width: 80vw;
+    width: 75vw;
     height: auto;
-    margin: 5vw auto;
+    margin: 6vw auto;
 }
 
 .logo-image {
@@ -115,18 +115,7 @@ p {
     height: auto;
 }
 
-/* team logo */
 
-.team {
-    width: 80vw;
-    height: auto;
-    margin: 5vw auto;
-}
-
-.team-image {
-    width: 100%;
-    height: auto;
-}
 
 
 
@@ -136,25 +125,58 @@ p {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 4vw; /* Space between image and text */
-    max-width: 90vw; /* Keeps it from getting too wide on big screens */
-    margin: 60px auto; /* Centers the whole block and adds space above/below */
+    gap: 4vw;
+    max-width: 70vw; 
+    margin: 60px auto; 
     padding: 0 2vw;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw; 
+    width: 70vw;
 }
 
 .left-section {
     background-color: #00000088;
-    padding: 1vw 2vw; /* More padding for a larger card */
-    border-radius: 0.4vw; /* Slightly rounded corners */
+    padding: 1vw 2vw; 
+    border-radius: 0.4vw; 
     text-align: left;
     line-height: 1;
     transition: transform 0.2s ease, background-color 0.2s ease;
     cursor: pointer;
     box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
-    display: wrap;
-    justify-content: left;
-    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+.ip-tab {
+    background-color: #00000088;
+    padding: 1vw 2vw; 
+    border-radius: 0.4vw; 
+    text-align: left;
+    line-height: 1;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
+    display: flex;      /* Fixed: Changed from wrap to flex */
+    flex-wrap: wrap;    /* Added correct wrap behavior */
+    justify-content: flex-start;
+    width: 100%;        /* Allows it to seamlessly fill the left-column width */
+    box-sizing: border-box;
+}
+
+.ip-tab a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
 
 .right-section {
     width: 30vw;
@@ -163,7 +185,7 @@ p {
 
 .store-tab, .team-tab {
     background-color: #00000088;
-    padding: 1.5vw 1.2vw;    /* Tightened padding */
+    padding: 1.2vw 1.0vw;    /* Tightened padding */
     border-radius: 0.4vw;
     margin-bottom: 1vw;
     display: flex;
@@ -186,14 +208,13 @@ p {
     background-color: #00000088;
     padding: 1vw 2vw; /* More padding for a larger card */
     border-radius: 0.4vw; /* Slightly rounded corners */
-    line-height: 1;
+    line-height: 0.6;
     transition: transform 0.2s ease, background-color 0.2s ease;
     cursor: pointer;
     box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
     justify-content: left;
     flex-direction: column;  /* Stacks items vertically */
     align-items: flex-start; /* Aligns everything to the left */
-    gap: 1vw;              /* Adds consistent spacing between lines */
     text-align: left;        /* Ensures text starts from the left edge */
 }
 

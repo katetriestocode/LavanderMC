@@ -18,21 +18,35 @@ h1 {
 }
 h2 { /* large titles without custom text */
     font-family: Arial, Helvetica, sans-serif;
-    color: azure;
+    color: white;
     font-size: xx-large;
 }
-h3 { /* various all caps text bits*/
+h3 {
     font-family: Arial, Helvetica, sans-serif;
-    color: azure;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1;
 }
-h4 { /* using this as normal text, to be used as last h being used */
+h4 {
     font-family: Arial, Helvetica, sans-serif;
-    color: azure;
-    font-size: large;
-    line-height: 1.5;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 1vw;
+}
+h5 { /* various all caps text bits*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 24px;
+    margin: 0;
 }
 p {
-
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+    line-height: 1.5;
 }
 
 
@@ -45,7 +59,7 @@ p {
     background: rgba(119, 55, 135, 0.85);
     width: 100%;
     z-index: 1000;
-    padding: 1vw 0;
+    padding: 2vw 0;
     box-shadow: black;
     text-shadow: black;
 }
@@ -87,12 +101,13 @@ p {
 }
 
 
+
 /* team logo */
 
 .team {
     width: 80vw;
     height: auto;
-    margin: 5vw auto;
+    margin: 7vw auto;
 }
 
 .team-image {
@@ -103,20 +118,18 @@ p {
 
 
 
-/* The container that holds all the cards */
 .team-container {
     display: grid;
-    /* This creates 3 equal columns */
     grid-template-columns: repeat(3, 1fr); 
-    gap: 2vw; 
-    max-width: 90vw;
-    margin: 40px auto;
-    padding-bottom: 50px;
+    gap: 4vw; 
+    max-width: 80vw;
+    margin: 1vw auto;
+    padding-bottom: 40px;
 }
 
 /* A single unified style for every team member */
 .team-card {
-    background-color: rgba(0, 0, 0, 0.534); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
     padding: 2vw;
     border-radius: 0.8vw;
     text-align: center; /* Centers the name and skin */
@@ -136,7 +149,6 @@ p {
     margin-top: 1vw;
 }
 
-/* Responsive: If the screen is too small, switch to 1 column */
 @media (max-width: 768px) {
     .team-container {
         grid-template-columns: 1fr;
