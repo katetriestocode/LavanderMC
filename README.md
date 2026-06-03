@@ -11,3 +11,5 @@ LavanderMC minecraft server official website :D featuring:
 <img width="1748" height="1122" alt="postcardnewshort" src="https://github.com/user-attachments/assets/40060a90-8221-4ddd-a0d9-c1b9f9fc8f48" />
 
 key color:rgba (228, 117, 157)
+
+Ai disclosure: Only used for troubleshooting
